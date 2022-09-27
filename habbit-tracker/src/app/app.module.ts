@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { AllhabitsComponent } from './components/allhabits/allhabits.component';
 import { FormcontainerComponent } from './components/formcontainer/formcontainer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { FormcontainerComponent } from './components/formcontainer/formcontainer
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
