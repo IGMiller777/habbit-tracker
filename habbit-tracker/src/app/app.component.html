@@ -1,13 +1,13 @@
 <div class="toolbar-container">
-  <mat-toolbar class="toolbar" color="primary">
+  <mat-toolbar class="toolbar" color="accent">
     <mat-icon aria-hidden="false" aria-label="check mark icon">fact_check</mat-icon>
-    <h1>Habit Tracker</h1>
+    <h1>Habits Tracker App</h1>
   </mat-toolbar>
 </div>
 
 <div *ngIf="!adding && !editing" class="all-habits">
-  <h1>All Habits</h1>
-  <button mat-raised-button color="accent" (click)="adding = !adding">
+  <h1>All Your Habits</h1>
+  <button mat-raised-button color="primary" (click)="adding = !adding">
     Add New Habit
   </button>
   <div *ngFor="let habit of habits; let i = index">
@@ -15,7 +15,7 @@
       <mat-card-title>
         <mat-icon
           class="habit-icon"
-          color="accent"
+          color="primary"
           aria-hidden="false"
           aria-label="circle check mark icon"
         >check_circle_outline</mat-icon

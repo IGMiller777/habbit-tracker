@@ -21,6 +21,12 @@ export class AppComponent implements OnInit {
       description:
         'The weeds get so out of hand if they wait any longer, and I like how nice our home looks with a clean lawn.',
     },
+    {
+      name: 'Go to the market',
+      frequency: 'Daily',
+      description:
+        'Buy a food for my childs.',
+    }
   ];
   habitForm = new FormGroup({
     name: new FormControl(''),
